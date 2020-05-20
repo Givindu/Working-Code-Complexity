@@ -30,7 +30,7 @@
 <link rel="stylesheet" type="text/css" href="CSS/main.css">
 <link rel="stylesheet" type="text/css"
 	href="Plugins/codemirror/lib/codemirror.css">
-<title>File Uploader</title>
+<title>Code Quality Measure</title>
 </head>
 <style>
 ul {
@@ -76,33 +76,20 @@ li a:hover:not (.active ) {
 
 		</div>
 	</section>
-	<div>
-	<button>
-<a href="Action_file_Size.jsp" type="button">Size</a>
-</button>
-	<button>
-<a href="Action_file_Variable.jsp" type="button">Variable</a>
-</button>
-	<button>
-<a href="Action_file_Method.jsp" type="button">Method</a>
-</button>
-	<button>
-<a href="action_file_Inheritance.jsp" type="button">Inheritance</a>
-</button>
-<button>
-<a href="action_file_ControlStructures.jsp" type="button">Control Structures</a>
-</button>
-<button>
-<a href="action_file_Coupeling.jsp" type="button">Coupeling</a>
-</button>
-<button>
-<a href="action_file_allfactors.jsp" type="button">All Factors</a>
-</button>
-</div>
+
 
 	
 	<h1 style="color:#FFFAFA; font-size:64px; text-align: center;">All Factors</h1>
-	<div style="margin-left: 369px;">
+	
+	<div style="margin-left: 436px; margin-top: 26px;">
+		<a class="btn btn-primary" href="Action_file_Size.jsp" role="button">Size,Variable,Method</a>
+	    <a class="btn btn-primary" href="Action-file-ControlStructure.jsp" role="button">Control Structures</a>
+	    <a class="btn btn-primary" href="action_file_Inheritance.jsp" role="button">Inheritance</a>
+	    <a class="btn btn-primary" href="action_file_Coupeling.jsp" role="button">Coupeling</a>
+	    <a class="btn btn-primary" href="action_file_allfactors.jsp" role="button">All Factors</a>
+   </div><br><br>
+	
+	<div style="margin-left: 369px; color: white;"">
 		<h1>Select Folder:</h1>
 		<br />
 		</hr>
@@ -121,17 +108,6 @@ li a:hover:not (.active ) {
 
 					</select>
 				</div>
-				<div class="form-group" style="font-size: 20px; margin-left: 250px; font-weight: normal;">
-				<label for="complexity">Complexity Type:</label> 
-				<select class="custom-select" name ="type">
-
-					<option value="1">By Size</option>
-					<option value="2">By Control Structure</option>
-					<option value="3">By Inheritance</option>
-					<option value="4">By Recursion</option>
-				</select>
-			</div>
-
 				<div class="form-group"
 					style="font-size: 25px; margin-left: -69px; width: 81%; font-weight: normal;">
 					<label for="code">Enter Code:</label>
