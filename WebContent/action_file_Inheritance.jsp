@@ -29,7 +29,7 @@
 <link rel="stylesheet" type="text/css" href="CSS/main.css">
 <link rel="stylesheet" type="text/css"
 	href="Plugins/codemirror/lib/codemirror.css">
-<title>File Uploader</title>
+<title>Code Quality Measure</title>
 </head>
 <style>
 ul {
