@@ -473,7 +473,7 @@ a:hover:not (.active ) {
 	//variable complexity taaaaaaaaaaaaaaaabellllllllll starteeeeeeeeeeeeeeeeeeeedddddddddddddddddddddddddddddddddddddddddd
 	%>
 	
-	<form action="AccessFilesServlet" method="post" class="form-group" style="width: 50%; margin-left: 470px;">
+	<form action="AccessFilesServlet" method="post" class="form-group" style="width: 50%; margin-left: 420px;">
 				<table class="table table-responsive-lg">
 					<caption style="caption-side: top; text-align:center; font-size:x-large;">Weights related to the Inheritance factor</caption>
 					<thead class="table-dark">
@@ -524,7 +524,7 @@ a:hover:not (.active ) {
 			<div align="center">
 		
 				<h1 class="display-1"
-					style="center: 2%; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
+					style="padding-left: -79px; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
 					<font color="#00376c">Complexity of Control Structure</font>
 				</h1>
 				<br> 
