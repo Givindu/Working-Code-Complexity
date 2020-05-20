@@ -18,7 +18,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>File Upload</title>
+<title>Code Quality Measure</title>
 <style>
 table, td, th {
 	border: 1px solid black;
@@ -53,10 +53,42 @@ th {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #2c2e2d;
+	font-size: 25px;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li
+a:hover:not (.active ) {
+	background-color: #f2f5f4;
+}
+
+
 </style>
 </head>
 <body>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+		<ul>
+		<li><a href="index.jsp">Home</a></li>
+		</ul>
+
+
+
 	<%
 		String currentClassName = "";
 	File file = null;
@@ -336,8 +368,21 @@ th {
 	// 	for (int x = 0; x < list.size(); x++)
 	// 		regexString += list.get(x) + "\n";
 	%>
-	<h1 id="size_com">Size complexity</h1>
-	<table style="width: 100%">
+	
+	
+	<div align="center">
+		
+				<h1 class="display-1"
+					style="center: 2%; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
+					<font color="#00376c">Complexity of Size</font>
+				</h1>
+				<br> 
+	
+			</div>
+
+	
+	<br>
+	<table class="table" style="width: 78%; margin-left: 184px;">
 		<colgroup>
 			<col style="width: 1%;">
 			<col style="width: 48%;">
@@ -587,11 +632,24 @@ th {
 
 	//variable complexity taaaaaaaaaaaaaaaabellllllllll starteeeeeeeeeeeeeeeeeeeedddddddddddddddddddddddddddddddddddddddddd
 	%>
-	<h1>Variable complexity</h1>
-	<table style="width: 100%">
+	
+	<div align="center">
+		
+				<h1 class="display-1"
+					style="center: 2%; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
+					<font color="#00376c">Complexity of Variables</font>
+				</h1>
+				<br> 
+	
+			</div>
+
+	
+	<br>
+	
+	<table class="table" style="width: 78%; margin-left: 184px;">
 		<colgroup>
-			<col style="width: 1%;">
-			<col style="width: 48%;">
+			<col style="width: 8%;">
+			<col style="width: 78%;">
 			<col style="width: 1%;">
 
 			<col style="width: 4%;">
@@ -705,11 +763,22 @@ th {
 	<br>
 	<br>
 
-	<h1>complexity of a program due to methods</h1>
-	<hr>
+	<div align="center">
+		
+				<h1 class="display-1"
+					style="center: 2%; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
+					<font color="#00376c">Complexity of Methods</font>
+				</h1>
+				<br> 
+	
+			</div>
+
+	
 	<br>
 
-	<table style="width: 100%">
+
+
+	<table class="table" style="width: 78%; margin-left: 184px;">
 		<colgroup>
 			<col style="width: 1%;">
 			<col style="width: 48%;">
@@ -820,7 +889,7 @@ th {
 
 
 
-	<table style="width: 100%">
+	<table class="table" style="width: 78%; margin-left: 184px;">
 		<colgroup>
 			<col style="width: 1%;">
 			<col style="width: 48%;">
@@ -842,7 +911,18 @@ th {
 			<col style="width: 1%;">
 		</colgroup>
 
-		<h1>Coupeling complexity</h1>
+		<div align="center">
+		
+				<h1 class="display-1"
+					style="center: 2%; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
+					<font color="#00376c">Complexity of Coupling</font>
+				</h1>
+				<br> 
+	
+			</div>
+
+	
+	<br>
 
 		<!-- Put <thead>, <tbody>, and <tr>'s here! -->
 		<tbody>
@@ -1073,11 +1153,22 @@ th {
 	</table>
 
 
-	<h1>complexity of a program due to control structures</h1>
-	<table style="width: 100%">
+	<div align="center">
+		
+				<h1 class="display-1"
+					style="center: 2%; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
+					<font color="#00376c">Complexity of Control Structure</font>
+				</h1>
+				<br> 
+	
+			</div>
+
+	
+	<br>
+	<table class="table" style="width: 78%; margin-left: 184px;" >
 		<colgroup>
 			<col style="width: 1%;">
-			<col style="width: 48%;">
+			<col style="width: 78%;">
 			<col style="width: 1%;">
 
 			<col style="width: 4%;">
@@ -1199,8 +1290,19 @@ th {
 	<br>
 	<br>
 
-	<h1>complexity of a program due to Inheritance</h1>
-	<table style="width: 100%">
+	<div align="center">
+		
+				<h1 class="display-1"
+					style="center: 2%; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
+					<font color="#00376c">Complexity of Inheritance</font>
+				</h1>
+				<br> 
+	
+			</div>
+
+	
+	<br>
+	<table class="table" style="width: 78%; margin-left: 184px;" >
 		<colgroup>
 			<col style="width: 1%;">
 			<col style="width: 48%;">
@@ -1350,8 +1452,19 @@ th {
 
 
 
-	<h1>complexity of a program due to all the factors</h1>
-	<table style="width: 100%">
+	<div align="center">
+		
+				<h1 class="display-1"
+					style="center: 2%; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
+					<font color="#00376c">Complexity of All Factors</font>
+				</h1>
+				<br> 
+	
+			</div>
+
+	
+	<br>
+	<table class="table" style="width: 78%; margin-left: 184px;" >
 		<colgroup>
 			<col style="width: 1%;">
 			<col style="width: 48%;">
@@ -1475,27 +1588,6 @@ th {
 
 </body>
 
-<script type="text/javascript">
 
-mybutton = document.getElementById("myBtn");
-
-//When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
- mybutton.style.display = "block";
-} else {
- mybutton.style.display = "none";
-}
-}
-
-//When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-document.body.scrollTop = 0; // For Safari
-document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-</script>
 
 </html>
