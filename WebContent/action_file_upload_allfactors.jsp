@@ -18,6 +18,28 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+	crossorigin="anonymous"></script>
 <title>Code Quality Measure</title>
 <style>
 table, td, th {
@@ -256,6 +278,7 @@ a:hover:not (.active ) {
 	<hr>
 	<h1 id="<%="id"+nowfile.getName().replaceAll(" ","")%>"><%=nowfile.getName()%></h1>
 	<hr>
+	<div hidden>
 	<%
 		List<String> list = new ArrayList();
 	//Set<String> listOfOtherMethodCallsThisFile = new HashSet();
@@ -368,7 +391,7 @@ a:hover:not (.active ) {
 	// 	for (int x = 0; x < list.size(); x++)
 	// 		regexString += list.get(x) + "\n";
 	%>
-	
+	</div>
 	
 	<div align="center">
 		
@@ -382,7 +405,7 @@ a:hover:not (.active ) {
 
 	
 	<br>
-	<table class="table" style="width: 78%; margin-left: 184px;">
+	<table style="width: 78%; margin-left: 184px; background-color: #fff; " class="table">
 		<colgroup>
 			<col style="width: 1%;">
 			<col style="width: 48%;">
@@ -646,7 +669,7 @@ a:hover:not (.active ) {
 	
 	<br>
 	
-	<table class="table" style="width: 78%; margin-left: 184px;">
+	<table  style="width: 78%; margin-left: 184px; background-color: #fff; " class="table">
 		<colgroup>
 			<col style="width: 8%;">
 			<col style="width: 78%;">
@@ -778,7 +801,7 @@ a:hover:not (.active ) {
 
 
 
-	<table class="table" style="width: 78%; margin-left: 184px;">
+	<table  style="width: 78%; margin-left: 184px; background-color: #fff; " class="table">
 		<colgroup>
 			<col style="width: 1%;">
 			<col style="width: 48%;">
@@ -889,10 +912,10 @@ a:hover:not (.active ) {
 
 
 
-	<table class="table" style="width: 78%; margin-left: 184px;">
+	<table  style="width: 50%; margin-left: 55px; background-color: #fff; " class="table">
 		<colgroup>
 			<col style="width: 1%;">
-			<col style="width: 48%;">
+			<col style="width: 30%;">
 			<col style="width: 1%;">
 
 			<col style="width: 4%;">
@@ -1165,7 +1188,7 @@ a:hover:not (.active ) {
 
 	
 	<br>
-	<table class="table" style="width: 78%; margin-left: 184px;" >
+	<table  style="width: 78%; margin-left: 184px; background-color: #fff; " class="table" >
 		<colgroup>
 			<col style="width: 1%;">
 			<col style="width: 78%;">
@@ -1287,54 +1310,33 @@ a:hover:not (.active ) {
 			%>
 		</tbody>
 	</table>
-	<br>
-	<br>
-
-	<div align="center">
-		
-				<h1 class="display-1"
-					style="center: 2%; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
-					<font color="#00376c">Complexity of Inheritance</font>
-				</h1>
-				<br> 
-	
-			</div>
-
 	
 	<br>
-	<table class="table" style="width: 78%; margin-left: 184px;" >
+	<table  style="width: 78%; margin-left: 184px; background-color: #fff; " class="table">
 		<colgroup>
-			<col style="width: 1%;">
+			<col style="width: 6%;">
 			<col style="width: 48%;">
-
 			<col style="width: 6%;">
 			<col style="width: 6%;">
 			<col style="width: 6%;">
 			<col style="width: 6%;">
-
 			<col style="width: 6%;">
 			<col style="width: 6%;">
 			<col style="width: 10%;">
-
 		</colgroup>
-
-
-
-		<!-- 	Cs Cv Cm Ci Ccp Ccs TCps    -->
-
-
-
+<h1 class="display-1"
+					style="padding-left: 366px; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
+					<font color="#00376c">Complexity of Inheritance</font>
+				</h1>
+				<br>
 		<tbody>
 			<tr>
-				<th>no</th>
+				<th>Line No</th>
 				<th>Program statements</th>
-
-
-
-				<th>Ci</th>
-
-
-
+				<th>Ndi</th>                <!--  (No of direct inheritances) -->
+				<th>Nidi</th>               <!-- (No of indirect inheritances) -->
+				<th>Ti</th>                 <!-- Total inheritances -->
+				<th>Ci</th>                 <!-- Ci -->
 			</tr>
 			<%!public String getMapping(String className, Map<String, String> classesAndData) {
 
@@ -1348,78 +1350,86 @@ a:hover:not (.active ) {
 				fullClassMap = fullClassMap + "null";
 			} else {
 				fullClassMap += classesAndData.get(extendedClass.group(2).trim());
-
 			}
-
 		}
-
 		return fullClassMap;
 	}%>
 
 			<%
 				Map<String, String> classesAndData = new LinkedHashMap();
 
-			Matcher classes = Pattern.compile("class( )+(.+)\\{").matcher(regexString);
+							Matcher classes = Pattern.compile("class( )+(.+)\\{").matcher(regexString);
 
-			while (classes.find()) {
-				String className = classes.group(2);
-				if (className.contains("extends")) {
-					classesAndData.put(className.substring(0, className.indexOf("extends")).trim(), className);
-				} else {
+							while (classes.find()) {
+								String className = classes.group(2);
+								if (className.contains("extends")) {
+									classesAndData.put(className.substring(0, className.indexOf("extends")).trim(),
+											className);
+								} else {
 
-					classesAndData.put(className, "");
-				}
-			}
+									classesAndData.put(className, "");
+								}
+							}
 
-			for (int i1 = 0; i1 < list.size(); i1++) {
+							for (int i1 = 0; i1 < list.size(); i1++) {
 
-				String originalCodeLine = list.get(i1).toString();
-				String codeLine[] = { list.get(i1).toString() };
-				String number = codeLine[0].substring(0, codeLine[0].indexOf("#"));
+								String originalCodeLine = list.get(i1).toString();
+								String codeLine[] = { list.get(i1).toString() };
+								String number = codeLine[0].substring(0, codeLine[0].indexOf("#"));
 
-				int classScore = 0;
+								int ci = 0;
+								int classScore = 0;
+								int direct = 0;
+								int inDirect = 0;
+								String classNameCol = "";
 
-				Matcher matchAgain = Pattern.compile("class( )+(.+)\\{").matcher(originalCodeLine);
+								Matcher matchAgain = Pattern.compile("class( )+(.+)\\{").matcher(originalCodeLine);
 
-				while (matchAgain.find()) {
-					String className = matchAgain.group(2);
+								while (matchAgain.find()) {
+									String className = matchAgain.group(2);
 
-					if (originalCodeLine.contains("extends")) {
-				String lastExtend = className.substring(className.indexOf("extends"));
+									if (originalCodeLine.contains("extends")) {
 
-				String fullClassMap = className;
+										direct = 1;
 
-				Matcher extendedClass = Pattern.compile("extends( )+(.+)").matcher(className);
-				if (extendedClass.find()) {
-					// 					fullClassMap += classesAndData.get(extendedClass.group(2).trim());
-					// 					System.out.println(fullClassMap + "  data addddddddddddddddddddddddddddddddddddddddddded "
-					// 							+ classesAndData.get(extendedClass.group(2).trim()));
+										String lastExtend = className.substring(className.indexOf("extends"));
+										String fullClassMap = className;
+										System.out.println(
+												className.split("extends")[0] + "2111111111111111111111111111111111111");
+										classNameCol = className.split("extends")[0];
+										Matcher extendedClass = Pattern.compile("extends( )+(.+)").matcher(className);
+										if (extendedClass.find()) {
 
-					while (!fullClassMap.contains("null")) {
+											while (!fullClassMap.contains("null")) {
 
-						fullClassMap = getMapping(fullClassMap, classesAndData);
+												fullClassMap = getMapping(fullClassMap, classesAndData);
 
-					}
+											}
 
-					Matcher countOfExtend = Pattern.compile("extends").matcher(fullClassMap);
-					while (countOfExtend.find()) {
-						System.out.println(fullClassMap.replaceAll("null", "") + "  data Map Generated count "
-								+ countOfExtend.group());
-						classScore++;
-					}
+											Matcher countOfExtend = Pattern.compile("extends").matcher(fullClassMap);
+											while (countOfExtend.find()) {
+												System.out.println(fullClassMap.replaceAll("null", "")
+														+ "  data Map Generated count " + countOfExtend.group());
+												classScore++;
+											}
 
-				}
+										}
 
-					} else {
-				System.out.println(className + "  data addddddddddddddddddddddddddddddddddddddddddded " + originalCodeLine);
+									} else {
+										System.out.println(className + "2111111111111111111111111111111111111");
+										classNameCol = className;
+										classScore = 0;
+									}
+								}
 
-				classScore = 0;
-					}
-				}
+								if (classScore > 4) {
+									classScore = 4;
+									ci = 4;
+								}
 
-				if (classScore > 4) {
-					classScore = 4;
-				}
+								for (int x = 0; x <= classScore; x++) {
+									ci += x;
+								}
 			%>
 
 
@@ -1428,14 +1438,14 @@ a:hover:not (.active ) {
 				<td><%=originalCodeLine.substring(0, originalCodeLine.indexOf("#"))%></td>
 				<td><%=originalCodeLine.substring(originalCodeLine.indexOf("#") + 1)%></td>
 				<%
-					table4.put(number, classScore);
+					table4.put(number, ci);
 				%>
 
+
+				<td><%=direct%></td>
+				<td><%=classScore - direct%></td>
 				<td><%=classScore%></td>
-
-
-
-
+				<td><%=classScore%></td>
 
 
 			</tr>
@@ -1464,7 +1474,7 @@ a:hover:not (.active ) {
 
 	
 	<br>
-	<table class="table" style="width: 78%; margin-left: 184px;" >
+	<table  style="width: 78%; margin-left: 184px; background-color: #fff; " class="table" >
 		<colgroup>
 			<col style="width: 1%;">
 			<col style="width: 48%;">
