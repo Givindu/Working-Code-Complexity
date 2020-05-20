@@ -76,32 +76,18 @@ background-color
 
 		</div>
 	</section>
-	<div>
-		<button>
-			<a href="Action_file_Size.jsp" type="button">Size</a>
-		</button>
-		<button>
-			<a href="Action_file_Variable.jsp" type="button">Variable</a>
-		</button>
-		<button>
-			<a href="Action_file_Method.jsp" type="button">Method</a>
-		</button>
-		<button>
-			<a href="action_file_Inheritance.jsp" type="button">Inheritance</a>
-		</button>
-		<button>
-			<a href="Action-file-ControlStructure.jsp" type="button">Control Structures</a>
-		</button>
-		<button>
-			<a href="action_file_Coupeling.jsp" type="button">Coupeling</a>
-		</button>
-		<button>
-			<a href="action_file_allfactors.jsp" type="button">All Factors</a>
-		</button>
-	</div>
 
 	<h1 style="color: #FFFAFA; font-size: 64px; text-align: center;">Code
 		Complexity</h1>
+		
+		<div style="margin-left: 436px; margin-top: 26px;">
+		<a class="btn btn-primary" href="Action_file_Size.jsp" role="button">Size,Variable,Method</a>
+	    <a class="btn btn-primary" href="Action-file-ControlStructure.jsp" role="button">Control Structures</a>
+	    <a class="btn btn-primary" href="action_file_Inheritance.jsp" role="button">Inheritance</a>
+	    <a class="btn btn-primary" href="action_file_Coupeling.jsp" role="button">Coupeling</a>
+	    <a class="btn btn-primary" href="action_file_allfactors.jsp" role="button">All Factors</a>
+   </div><br><br>
+		
 	<div style="margin-left: 369px;">
 		<h1 style="color: white;">Select Folder:</h1>
 		<br />
@@ -111,7 +97,7 @@ background-color
 			<input id="myInput" type="file" name="file" webkitdirectory directory
 				multiple="multiple" size="50" /> <br /> <br />
 			<div style="margin-left: 69px;">
-			  		<div class="form-group" style="font-size: 24px; font-weight: normal; margin-left: -70px; width: 1351px;">
+			  		<div class="form-group" style="font-size: 24px; font-weight: normal; margin-left: -70px; width: 873px;">
 				<label for="complexity" style="color: white;">Complexity Type:</label> 
 				<select class="custom-select" name ="type">
 

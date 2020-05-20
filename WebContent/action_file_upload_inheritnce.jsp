@@ -44,16 +44,13 @@
 table, td, th {
 	border: 1px solid black;
 }
-
 table {
 	border-collapse: collapse;
 	width: 100%;
 }
-
 th {
 	height: 50px;
 }
-
 #myBtn {
 	display: none; /* Hidden by default */
 	position: fixed; /* Fixed/sticky position */
@@ -69,13 +66,38 @@ th {
 	border-radius: 10px; /* Rounded corners */
 	font-size: 18px; /* Increase font size */
 }
-
 #myBtn:hover {
 	background-color: #555; /* Add a dark-grey background on hover */
 }
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #2c2e2d;
+	font-size: 25px;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li
+a:hover:not (.active ) {
+	background-color: #f2f5f4;
+}
 </style>
 </head>
-<body style="border-color: #454d55; background-color: #423F3F;">
+<body  style="border-color: #454d55;">
+<ul>
+		<li><a href="index.jsp">Home</a></li>
+		</ul>
+
 	<div >
 		<%
 		String currentClassName = "";
@@ -357,6 +379,34 @@ th {
 	%>
 </div>
 	
+	<form action="AccessFilesServlet" method="post" class="form-group" style="width: 50%; margin-left: 395px;">
+				<table class="table table-responsive-lg">
+					<caption style="caption-side: top; text-align:center; font-size:x-large;">Weights related to the Inheritance factor</caption>
+					<thead class="table-dark">
+						<tr>
+							<th scope="col" style="text-align:center">Program Component</th>
+							<th scope="col" style="text-align:center">Weight</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table-secondary">
+							<td class="d-flex justify-content-center">Direct Inheritance Weight</td>
+							<td><input class="form-control" type="number"
+								name="inputPrimitiveReturnWeight" id="inputPrimitiveReturnWeight" value="1"></td>
+						</tr>
+						<tr class="table-secondary">
+							<td class="d-flex justify-content-center">Indirect Inheritance Weight</td>
+							<td><input class="form-control" type="number"
+								name="inputCompositeReturnWeight" id="inputCompositeReturnWeight" value="2"></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="col text-right">
+					<button class="btn btn-dark" type="submit" name="sumbitButton"
+						id="sumbitButton">Save</button>
+				</div>
+			</form>
+	
 	<br>
 	<table  style="width: 78%; margin-left: 184px; background-color: #fff; " class="table">
 		<colgroup>
@@ -370,7 +420,11 @@ th {
 			<col style="width: 6%;">
 			<col style="width: 10%;">
 		</colgroup>
-<h1 style="text-align: center; background-color: #fff;">complexity of a program due to Inheritance</h1>
+<h1 class="display-1"
+					style="padding-left: 366px; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
+					<font color="#00376c">Complexity of Inheritance</font>
+				</h1>
+				<br>
 		<tbody>
 			<tr>
 				<th>Line No</th>

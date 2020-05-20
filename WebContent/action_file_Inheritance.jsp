@@ -75,34 +75,19 @@ li a:hover:not (.active ) {
 
 		</div>
 	</section>
-	<div>
-	<button>
-<a href="Action_file_Size.jsp" type="button">Size</a>
-</button>
-	<button>
-<a href="Action_file_Variable.jsp" type="button">Variable</a>
-</button>
-	<button>
-<a href="Action_file_Method.jsp" type="button">Method</a>
-</button>
-	<button>
-<a href="action_file_Inheritance.jsp" type="button">Inheritance</a>
-</button>
-<button>
-<a href="action_file_ControlStructures.jsp" type="button">Control Structures</a>
-</button>
-<button>
-<a href="action_file_Coupeling.jsp" type="button">Coupeling</a>
-</button>
-<button>
-<a href="action_file_allfactors.jsp" type="button">All Factors</a>
-</button>
-</div>
 	
 	<h1 style="color:#FFFAFA; font-size:64px; text-align: center;">Inheritance</h1>
-	<div style="margin-left: 369px;">
+	
+	<div style="margin-left: 436px; margin-top: 26px;">
+		<a class="btn btn-primary" href="Action_file_Size.jsp" role="button">Size,Variable,Method</a>
+	    <a class="btn btn-primary" href="Action-file-ControlStructure.jsp" role="button">Control Structures</a>
+	    <a class="btn btn-primary" href="action_file_Inheritance.jsp" role="button">Inheritance</a>
+	    <a class="btn btn-primary" href="action_file_Coupeling.jsp" role="button">Coupeling</a>
+	    <a class="btn btn-primary" href="action_file_allfactors.jsp" role="button">All Factors</a>
+   </div><br><br>
+	
+	<div style="margin-left: 369px; color: white;">
 		<h1>Select Folder:</h1>
-		<br />
 		</hr>
 		<form action="action_file_upload_inheritnce.jsp" method="post"
 			enctype="multipart/form-data">
