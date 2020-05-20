@@ -85,7 +85,7 @@ li a:hover:not (.active ) {
 		<a class="btn btn-primary" href="Action_file_Size.jsp" role="button">Size,Variable,Method</a>
 	    <a class="btn btn-primary" href="Action-file-ControlStructure.jsp" role="button">Control Structures</a>
 	    <a class="btn btn-primary" href="action_file_Inheritance.jsp" role="button">Inheritance</a>
-	    <a class="btn btn-primary" href="action_file_Coupeling.jsp" role="button">Coupeling</a>
+	    <a class="btn btn-primary" href="action_file_Coupeling.jsp" role="button">Coupling</a>
 	    <a class="btn btn-primary" href="action_file_allfactors.jsp" role="button">All Factors</a>
    </div><br><br>
 	

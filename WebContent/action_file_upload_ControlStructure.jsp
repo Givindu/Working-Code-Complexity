@@ -511,7 +511,7 @@ a:hover:not (.active ) {
 				</table>
 				<div class="col text-right">
 					<button class="btn btn-dark" type="submit" name="sumbitButton"
-						id="sumbitButton">Save</button>
+						id="sumbitButton" disabled>Save</button>
 				</div>
 			</form>
 
