@@ -29,7 +29,7 @@
 <link rel="stylesheet" type="text/css" href="CSS/main.css">
 <link rel="stylesheet" type="text/css"
 	href="Plugins/codemirror/lib/codemirror.css">
-<title>File Uploader</title>
+<title>Code Quality Measure</title>
 </head>
 <style>
 ul {
@@ -75,19 +75,33 @@ li a:hover:not (.active ) {
 
 		</div>
 	</section>
-	<h1 style="color:#FFFAFA; font-size:64px; text-align: center;">Control Structure</h1>
+	
+	
+	
+	<br>
+	<h1 style="color:#FFFAFA; font-size:64px; text-align: center;">Control Structure</h1><br>
+	<div style="margin-left: 529px; margin-top: 26px;">
+		<a class="btn btn-primary" href="Action_file_Size.jsp" role="button">Size,Variable,Method</a>
+	    <a class="btn btn-primary" href="Action-file-ControlStructure.jsp" role="button">Control Structures</a>
+	    <a class="btn btn-primary" href="action_file_Inheritance.jsp" role="button">Inheritance</a>
+	    <a class="btn btn-primary" href="action_file_Coupeling.jsp" role="button">Coupling</a>
+	    <a class="btn btn-primary" href="action_file_allfactors.jsp" role="button">All Factors</a>
+   </div><br><br>
+	
+	
+	
 	<div style="margin-left: 369px;">
-		<h1>Select Folder:</h1>
-		<br />
+		<h1 style="color: white;">Select Folder:</h1>
+		
 		</hr>
-		<form action="action_file_upload_ControlStructure.jsp" method="post"
+		<form style="color: white;" action="action_file_upload_ControlStructure.jsp" method="post"
 			enctype="multipart/form-data">
 			<input id="input-file" type="file" name="file" webkitdirectory directory
 				multiple="multiple" size="50" /> <br /> <br />
 			<div style="margin-left: 69px;">
 				<div class="form-group"
 					style="font-size: 25px; margin-left: -70px; font-weight: normal; width: 81%;">
-					<label for="complexity">Programming Language :</label> <select
+					<label style="color: white;" for="complexity">Programming Language :</label> <select
 						class="custom-select" name="language">
 
 						<option value="1">Java</option>
@@ -98,7 +112,7 @@ li a:hover:not (.active ) {
 
 				<div class="form-group"
 					style="font-size: 25px; margin-left: -69px; width: 81%; font-weight: normal;">
-					<label for="code">Enter Code:</label>
+					<label style="color: white;" for="code">Enter Code:</label>
 					<textarea class="form-control" rows="10" id="code" name="code"></textarea>
 				</div>
 			</div>

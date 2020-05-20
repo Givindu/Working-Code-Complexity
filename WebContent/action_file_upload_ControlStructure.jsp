@@ -80,10 +80,40 @@ th {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #2c2e2d;
+	font-size: 25px;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li
+a:hover:not (.active ) {
+	background-color: #f2f5f4;
+}
+
+
 </style>
 </head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+		<ul>
+		<li><a href="index.jsp">Home</a></li>
+		</ul>
+
 	<%
 		String currentClassName = "";
 	File file = null;
@@ -443,17 +473,68 @@ th {
 	//variable complexity taaaaaaaaaaaaaaaabellllllllll starteeeeeeeeeeeeeeeeeeeedddddddddddddddddddddddddddddddddddddddddd
 	%>
 	
+	<form action="AccessFilesServlet" method="post" class="form-group" style="width: 50%; margin-left: 470px;">
+				<table class="table table-responsive-lg">
+					<caption style="caption-side: top; text-align:center; font-size:x-large;">Weights related to the Inheritance factor</caption>
+					<thead class="table-dark">
+						<tr>
+							<th scope="col" style="text-align:center">Control Structure Type</th>
+							<th scope="col" style="text-align:center">Weight</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table-secondary">
+							<td class="d-flex justify-content-center">if or else-if condition</td>
+							<td><input class="form-control" type="number"
+								name="inputPrimitiveReturnWeight" id="inputPrimitiveReturnWeight" value="2"></td>
+						</tr>
+						
+						<tr class="table-secondary">
+							<td class="d-flex justify-content-center"> for, while, or do-while loop</td>
+							<td><input class="form-control" type="number"
+								name="inputCompositeReturnWeight" id="inputCompositeReturnWeight" value="3"></td>
+						</tr>
+						
+						<tr class="table-secondary">
+							<td class="d-flex justify-content-center"> switch statement in a switch-case</td>
+							<td><input class="form-control" type="number"
+								name="inputCompositeReturnWeight" id="inputCompositeReturnWeight" value="2"></td>
+						</tr>
+						
+						<tr class="table-secondary">
+							<td class="d-flex justify-content-center">  case statement in a switch-case</td>
+							<td><input class="form-control" type="number"
+								name="inputCompositeReturnWeight" id="inputCompositeReturnWeight" value="1"></td>
+						</tr>
+						
+					</tbody>
+				</table>
+				<div class="col text-right">
+					<button class="btn btn-dark" type="submit" name="sumbitButton"
+						id="sumbitButton">Save</button>
+				</div>
+			</form>
 
+<br><br>
 	
 
 	
 
 
-	<h1 style="position: absolute; right: 282px;">complexity of a program due to control structures</h1>
-	<br><br><br><br><br>
+			<div align="center">
+		
+				<h1 class="display-1"
+					style="center: 2%; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
+					<font color="#00376c">Complexity of Control Structure</font>
+				</h1>
+				<br> 
+	
+			</div>
 
+	
+	<br>
 
-	<table class="table table-striped table-dark" style="width: 78%; margin-left: 184px;" >
+	<table class="table" style="width: 78%; margin-left: 184px;" >
 		<colgroup>
 			<col style="width: 8%;">
 			<col style="width: 78%;">
@@ -601,27 +682,6 @@ th {
 
 </body>
 
-<script type="text/javascript">
 
-mybutton = document.getElementById("myBtn");
-
-//When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
- mybutton.style.display = "block";
-} else {
- mybutton.style.display = "none";
-}
-}
-
-//When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-document.body.scrollTop = 0; // For Safari
-document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-</script>
 
 </html>
